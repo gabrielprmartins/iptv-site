@@ -101,3 +101,29 @@ const addMenuEvent = () => {
 };
 
 addMenuEvent();
+
+// SCROLL SECTIONS ACTIVE
+const sections = document.querySelectorAll('section[id]');
+
+const scrollActive = () => {
+  const scrollY = window.pageYOffset;
+
+  sections.forEach((section) => {
+    const sectionHeight = section.offsetHeight;
+    const sectionTop = section.offsetTop - 200;
+    const sectionId = section.getAttribute('id');
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document.querySelector(`.menu li a[href*=${sectionId}]`).classList.add(activeClass);
+    } else {
+      document.querySelector(`.menu li a[href*=${sectionId}]`).classList.remove(activeClass);
+    }
+  });
+};
+
+const addScrollSectionEvent = () => {
+  window.addEventListener('scroll', scrollActive);
+};
+
+scrollActive();
+addScrollSectionEvent();

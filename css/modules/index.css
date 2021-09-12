@@ -32,7 +32,8 @@
   display: block;
 }
 
-.menu li a:hover {
+.menu li a:hover,
+.menu li a.active {
   color: var(--vermelho);
 }
 
