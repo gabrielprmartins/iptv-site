@@ -37,11 +37,12 @@
 /* INTRO */
 .intro {
   background: url('../../assets/background-intro.jpg') no-repeat center center;
-  width: 100%;
 }
 
 .intro-content {
   padding: 130px 60px 130px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .atributos {
@@ -57,6 +58,22 @@
 .p-intro {
   margin: 30px 0;
   max-width: 500px;
+}
+
+/* INTRO RESPONSIVO */
+@media screen and (max-width: 700px) {
+  .intro-content {
+    padding: 120px 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .atributos {
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 0 20px;
+  }
 }
 
 /* SERVIÇOS */
@@ -115,13 +132,13 @@
 
 /* VANTAGENS */
 .vantagens {
-  padding: 130px 20px;
   background: url('../../assets/background-vantagens.jpg') no-repeat center center;
 }
 
 .vantagens-content {
-  max-width: 1200px;
+  padding: 80px 20px;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 .vantagens-titulo {
@@ -129,7 +146,6 @@
   font-size: 3.5rem;
   color: var(--vermelho);
   position: relative;
-  margin-bottom: 30px;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 20px;
@@ -156,11 +172,38 @@
 }
 
 .vantagem-item {
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-template-columns: 50px auto;
   gap: 20px;
 }
 
+/* VANTAGENS RESPONSIVO */
+@media screen and (max-width: 700px) {
+  .vantagens {
+    background-position: 70% 70%;
+  }
+  .vantagens-content {
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .vantagens-titulo {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .vantagens-lista {
+    margin: 30px 0;
+  }
+  .vantagem-item {
+    grid-template-columns: 40px auto;
+  }
+  .vantagem-item p {
+    font-size: 0.875rem;
+  }
+}
 /* PREÇO */
 .preco-card-titulo {
   font-family: var(--font-titulo);
@@ -219,6 +262,26 @@
   color: var(--branco);
 }
 
+/* PREÇO RESPONSIVO */
+@media screen and (max-width: 700px) {
+  .preco-card-lista-item {
+    grid-template-columns: 30px auto;
+  }
+  .preco-card-valor {
+    padding: 10px;
+  }
+  .preco-card-lista-item p {
+    font-size: 0.875rem;
+  }
+  .valor {
+    font-size: 2.5rem;
+  }
+  .preco-card-mes,
+  .preco-card-sup {
+    font-size: 1rem;
+  }
+}
+
 /* CITAÇÃO */
 .citacao {
   padding: 130px 20px;
@@ -230,6 +293,13 @@
   font-size: 2rem;
   color: var(--branco);
   text-align: center;
+}
+
+/* CITAÇÃO RESPONSIVO */
+@media screen and (max-width: 700px) {
+  .citacao-paragrafo {
+    font-size: 1.5rem;
+  }
 }
 
 /* CONTATO */

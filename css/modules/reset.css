@@ -27,6 +27,7 @@ body {
   background-color: var(--background);
 }
 
+/* RESET BOTÃO */
 .btn {
   display: inline-block;
   text-align: center;
@@ -42,16 +43,24 @@ body {
 
 .btn:hover {
   transform: translate3d(0, -3px, 0);
-  box-shadow: 2px 4px 25px 0 var(--vermelho);;
+  box-shadow: 2px 4px 25px 0 var(--vermelho);
 }
 
+/* RESET CONTENT */
 .content {
   max-width: 1200px;
   margin: 80px auto;
   padding: 20px;
 }
 
-/* TITULOS */
+/* RESET CONTENT RESPONSIVO */
+@media screen and (max-width: 700px) {
+  .content {
+    margin: 30px auto;
+  }
+}
+
+/* RESET TITULOS */
 .titulo-principal {
   font-family: var(--font-titulo);
   font-size: 5rem;
@@ -126,7 +135,28 @@ body {
   color: var(--azul);
 }
 
-/* PARAGRAFO */
+/* RESET TITULOS RESPONSIVO */
+@media screen and (max-width: 700px) {
+  .titulo-principal {
+    font-size: 3.5rem;
+  }
+  .titulo {
+    font-size: 2rem;
+    padding: 20px;
+  }
+  .titulo:after,
+  .titulo:before {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .titulo-principal {
+    font-size: 3rem;
+  }
+}
+
+/* RESET PARAGRAFO */
 .paragrafo {
   font-family: var(--font);
   font-size: 1rem;
