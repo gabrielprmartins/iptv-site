@@ -105,8 +105,9 @@ body {
   padding: 30px 20px;
   text-align: center;
   position: relative;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .titulo:after,
