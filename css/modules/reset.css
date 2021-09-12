@@ -4,3 +4,132 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-family: var(--font);
+  color: var(--branco);
+  background-color: var(--vermelho);
+  font-size: 1rem;
+  padding: 15px 35px;
+  border-radius: 4px;
+  box-shadow: 2px 8px 10px 0 rgba(255, 46, 99, 0.1);
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  transform: translate3d(0, -3px, 0);
+  box-shadow: 2px 4px 25px 0 var(--vermelho);;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 20px;
+}
+
+/* TITULOS */
+.titulo-principal {
+  font-family: var(--font-titulo);
+  font-size: 5rem;
+  color: var(--branco);
+  max-width: 900px;
+  margin-bottom: 30px;
+  position: relative;
+  padding: 20px 0;
+}
+
+.titulo-principal:after,
+.titulo-principal:before {
+  content: '';
+  width: 100px;
+  height: 4px;
+  display: block;
+  position: absolute;
+}
+
+.titulo-principal:after {
+  background-color: var(--vermelho);
+  box-shadow: var(--shadow-vermelho);
+  top: 0;
+  left: 0;
+}
+
+.titulo-principal:before {
+  background-color: var(--azul);
+  box-shadow: var(--shadow-azul);
+  bottom: 0;
+  right: 0;
+}
+
+.titulo-principal span {
+  color: var(--vermelho);
+}
+
+.titulo {
+  font-family: var(--font-titulo);
+  font-size: 3rem;
+  color: var(--vermelho);
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.titulo:after,
+.titulo:before {
+  content: '';
+  width: 100px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.titulo:after {
+  background-color: var(--vermelho);
+  box-shadow: var(--shadow-vermelho);
+  top: 0;
+}
+
+.titulo:before {
+  background-color: var(--azul);
+  box-shadow: var(--shadow-azul);
+  bottom: 0;
+}
+
+.titulo span {
+  color: var(--azul);
+}
+
+/* PARAGRAFO */
+.paragrafo {
+  font-family: var(--font);
+  font-size: 1rem;
+  color: var(--branco);
+  line-height: 1.4;
+}
