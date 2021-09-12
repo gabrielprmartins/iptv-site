@@ -15,14 +15,16 @@
 </head>
 <body>
   <!-- ========== HEADER ========== -->
-  <header class="header">
+  <header class="header" data-header>
     <nav class="nav">
-      <a href="#" class="logo">
+      <a href="#intro" class="logo">
         <img src="assets/logo.svg" alt="IPTV">
       </a>
 
-      <ul class="menu">
-        <li><a href="#">Início</a></li>
+      <button class="btn-mobile" data-mobile-button aria-expanded="false" aria-controls="menu" aria-haspopup="true">Menu</button>
+
+      <ul class="menu" data-menu role="menu">
+        <li><a href="#intro">Início</a></li>
         <li><a href="#preco">Preço</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
@@ -33,7 +35,7 @@
   <!-- ========== MAIN ========== -->
   <main>
     <!-- ========== INTRO ========== -->
-    <section class="intro">
+    <section class="intro" id="intro">
       <div class="intro-content">
         <h1 class="titulo-principal">O melhor do <span>IPTV</span> para <span>você</span> e sua <span>família</span></h1>
         <b class="atributos">Qualidade <span>•</span> Confiança <span>•</span> Preço justo</b>
@@ -145,7 +147,7 @@
       <p class="citacao-paragrafo">“A televisão é uma janela que nos abre uma porta para o mundo.”</p>
     </blockquote>
     <!-- ========== CONTATO ========== -->
-    <section class="contato">
+    <section class="contato" id="contato">
       <div class="contato-content content">
         <h1 class="titulo">Contato</h1>
         <p class="paragrafo p-contato">Ficou com alguma dúvida ou precisa de alguma ajuda com sua compra? Então entre em contato conosco pelo WhatsApp</p>

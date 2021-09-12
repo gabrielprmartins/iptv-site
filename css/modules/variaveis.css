@@ -4,6 +4,8 @@
   --background-img: rgba(30, 32, 34, 0.3);
   --background-header: rgba(37, 42, 52, 0.15);
   --cinza: #252A34;
+  --cinza-2: #222831;
+  --cinza-3: #364F6B;
   --branco: #FFFFFF;
   --vermelho: #FF2E63;
   --azul: #08D9D6;
@@ -17,4 +19,10 @@
 :root {
   --font-titulo: 'Oxygen', sans-serif;
   --font: 'Fira Sans', sans-serif;
+}
+
+/* HEADER */
+:root {
+  --header-height: 90px;
+  --header-scroll-height: 70px;
 }

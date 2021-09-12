@@ -1,0 +1,59 @@
+.btn-mobile {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: url('../../assets/hamburguer.svg') no-repeat center center;
+  text-indent: -10000px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.4s;
+  overflow: hidden;
+  display: none;
+}
+
+.btn-mobile:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 700px) {
+  .nav > .btn {
+    display: none;
+  }
+  .btn-mobile {
+    display: block;
+  }
+  .menu {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: var(--header-height);
+    right: 0;
+    background: var(--cinza);
+    z-index: 999;
+    transition: all 0.4s;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+    box-shadow: 4px 10px 20px 0 rgba(0, 0, 0, 0.35);
+  }
+  .header.active .menu {
+    top: var(--header-scroll-height);
+  }
+  .menu li a {
+    padding: 20px;
+  }
+  .menu li a:hover {
+    background-color: var(--cinza-3);
+  }
+  .menu.active {
+    height: 180px;
+    visibility: visible;
+  }
+  .header.active .menu.active {
+    height: 171px;
+    visibility: visible; 
+  }
+  .btn-mobile.active {
+    transform: rotate(-90deg);
+  }
+}

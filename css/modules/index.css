@@ -1,12 +1,13 @@
 /* HEADER */
 .header {
   background: var(--background-header);
-  padding: 20px;
+  padding: 20px 40px;
   position: fixed;
   width: 100%;
-  height: 90px;
+  height: var(--header-height);
   z-index: 999;
   box-shadow: var(--shadow-header);
+  transition: all 0.4s;
 }
 
 .nav {
@@ -28,10 +29,32 @@
   padding: 15px 20px;
   color: var(--branco);
   transition: 0.4s;
+  display: block;
 }
 
 .menu li a:hover {
   color: var(--vermelho);
+}
+
+.logo img {
+  border-radius: 50%;
+  box-shadow: 2px 2px 0px 0 var(--azul), -2px -2px 0px 0 var(--azul);
+}
+
+/* HEADER ACTIVE */
+.header.active {
+  height: var(--header-scroll-height);
+  padding: 10px 20px;
+  background-color: var(--cinza-2);
+  box-shadow: 4px 10px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
+.header.active .menu li a {
+  font-size: 0.875rem;
+}
+
+.header.active .logo img {
+  max-width: 40px;
 }
 
 /* INTRO */
