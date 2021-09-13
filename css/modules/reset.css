@@ -183,3 +183,10 @@ body {
   flex-wrap: wrap;
   gap: 30px;
 }
+
+/* CONTATO RESPONSIVO */
+@media screen and (max-width: 500px) {
+  .btns {
+    justify-content: center;
+  }
+}
