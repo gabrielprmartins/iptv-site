@@ -164,3 +164,22 @@ body {
   color: var(--branco);
   line-height: 1.4;
 }
+
+/* CONTATO */
+.contato-div {
+  display: grid;
+  grid-template-columns: 40px auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.contato-div > .p-contato {
+  text-align: left;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
